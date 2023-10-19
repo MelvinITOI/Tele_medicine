@@ -53,24 +53,36 @@ class _LoginPageState extends State<LoginScreen> {
       child: const Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // SizedBox(height: 70,),
-          // Icon(Icons.person,size: 60,color: Colors.black54,),
-          SizedBox(height: 150,),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(Icons.local_hospital,size: 40,color: Colors.blueGrey,),
-              SizedBox(width: 10,),
-              Text(
-                "Tele Medicine ",
-                style: TextStyle(
-                    color: Colors.black54,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'TiltNeon',
-                    fontSize: 40,
-                    letterSpacing: 2),
-              )
-            ],
+          SizedBox(height: 100),
+          Padding(
+              padding: EdgeInsets.all(20),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Center(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget> [
+                        Icon(
+                          Icons.local_hospital, // Replace with the desired icon
+                          size: 40, // Adjust the size as needed
+                          color: Colors.blueGrey, // Adjust the color as needed
+                        ),
+                        Text(
+                          "Tele Medicine ",
+                          style: TextStyle(
+                            color: Colors.black54,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'TiltNeon',
+                            fontSize: 40,
+                            letterSpacing: 2,
+                          ),
+                        ),
+                      ],
+                    )
+                ),
+              ],
+            ),
           )
         ],
       ),
