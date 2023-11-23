@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginScreen> {
                   fontWeight: FontWeight.w500),
             ),
             const Text("Please login with your information"),
-            const SizedBox(height: 60),
+            const SizedBox(height: 40),
             Container(
               padding: const EdgeInsets.all(10),
               decoration: const BoxDecoration(
@@ -182,7 +182,7 @@ class _LoginPageState extends State<LoginScreen> {
             ),
             const SizedBox(height: 70),
             // _buildRememberForgot(),
-            const SizedBox(height: 0),
+            // const SizedBox(height: 0),
             ElevatedButton(
               onPressed: () {
                 if (_formKey.currentState!.validate()) {

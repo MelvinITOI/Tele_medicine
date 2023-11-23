@@ -15,6 +15,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
     String selectedTitle = titles.isNotEmpty ? titles[0] : '';
     return AppBar(
       elevation: 0,
+      automaticallyImplyLeading: false,
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children:  [
