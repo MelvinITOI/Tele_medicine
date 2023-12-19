@@ -41,13 +41,17 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         Padding(
           padding: const EdgeInsets.only(right: 8.0),
-          // To scale the image Size
-          child: Transform.scale(
-            scale: 1.6,
-            child: IconButton(
-              onPressed: () {},
-              icon: CircleAvatar(
-                child: Image.asset('assets/images/elg0hary.png'),
+          child: Visibility(
+            visible: appBarValue == 1,
+            child: Transform.scale(
+              scale: 1,
+              child: IconButton(
+                onPressed: () {
+                  print("Popmenu Working");
+                },
+                icon: CircleAvatar(
+                  child: Image.asset('assets/images/elg0hary.png'),
+                ),
               ),
             ),
           ),
